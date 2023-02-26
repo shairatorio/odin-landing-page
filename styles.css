@@ -39,7 +39,7 @@ body {
     gap: 10rem; /* 100px */
     background-color: var(--color-dark-blue);
     padding: 20px;
-    border-bottom: 2px solid var(--color-dark-gray);
+    border-bottom: 3px solid var(--color-dark-gray);
 }
 
 .navigation-bar {
@@ -129,6 +129,7 @@ a:active, a:hover {
     align-items: flex-start;
     justify-content: center;
     gap: 10px;
+    text-align: center;
 }
 
 .img-mountain, .img-rock{
@@ -149,9 +150,11 @@ a:active, a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    /* padding: 80px; */
+    padding: 50px 0 70px;
     /* border: 2px solid red; */
+    margin: 0 auto;
+    text-align: center;
+    
 }
 
 .ss-grid-container {
@@ -162,17 +165,14 @@ a:active, a:hover {
     width: 100%;
     /* max-width: 200rem; */
     /* margin: 0 auto; */
-    /* border: 2px solid red;   */
+    /* border: 2px solid blue;   */
+    margin: 50px auto;
 }
 
 .ss-grid-box {
     display: inline-block; /* to make the div fit the image */
     width: 300px; /* replace with the width of your image */
     height: 300px; /* replace with the height of your image */
-}
-
-.fig-caption {
-    text-align: center;
 }
 
 .fa-github {
@@ -221,6 +221,10 @@ a:active, a:hover {
     html {
         font-size: 56%; 
     }
+
+    .random {
+        padding: 0 5px 0;
+    }
 }
   
 /* Media query for screens with a minimum width of 769px and a maximum width of 1024px */
@@ -247,7 +251,6 @@ and (max-width: 480px),
     .fs-flex-container {
         display: flex;
         flex-direction: column;
-        text-align: center;
         align-items: center;
     }
     
@@ -258,7 +261,14 @@ and (max-width: 480px),
 
     .ss-grid-container {
         grid-gap: 40px;
+        padding: 0px 30px;
+        /* border: 2px solid red; */
     }
+
+    .banner {
+        gap: 0;
+    }
+    
 }
 
 @media only screen
